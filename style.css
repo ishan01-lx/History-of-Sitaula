@@ -1,0 +1,293 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 40px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    color: #2a2727;
+    background: rgb(255, 255, 255);
+    padding: 15px 0;
+    border-bottom: #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #2a2727;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #ffd817;
+}
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background-image.jpg'); /* You can use any background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.max-width {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.home-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px;
+}
+.home-content:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #545351;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffa500; /* Orange color */
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.text-1 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-1 {
+        font-size: 1rem;
+    }
+}
+
+.history {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 150px;
+    color: #333;
+    font-weight: bold;
+}
+
+.serv-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    flex-basis: calc(33.333% - 20px);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box i {
+    font-size: 2rem;
+    color: #ffa500; /* Orange color */
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
+/* Style for the FAQ section */
+.faq {
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 40px 20px;       /* Padding around the section */
+    font-family: 'Arial', sans-serif; /* Font for the section */
+}
+
+/* Container within the FAQ section */
+.max-width {
+    max-width: 1200px;       /* Limits the maximum width for larger screens */
+    margin: 0 auto;          /* Centers the container horizontally */
+    padding: 0 20px;         /* Padding within the container */
+}
+
+/* Style for FAQ heading */
+.title1 {
+    font-size: 2.5em;        /* Larger font size for prominence */
+    color: #333;             /* Dark color for readability */
+    text-align: center;      /* Center-aligns the heading */
+    margin-bottom: 30px;     /* Spacing below the heading */
+}
+
+/* Style for each FAQ card */
+.faq-card {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;     /* Rounded corners for the card */
+    margin-bottom: 20px;    /* Space between cards */
+    padding: 20px;          /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for FAQ question */
+.faq-card h3 {
+    font-size: 1.5em;        /* Font size for questions */
+    color: #007BFF;          /* Blue color for the question */
+    margin-bottom: 10px;     /* Spacing below the question */
+}
+
+/* Style for FAQ answer */
+.faq-card p {
+    font-size: 1em;          /* Normal font size for answers */
+    color: #555;             /* Slightly gray color for text */
+    line-height: 1.6;        /* Line height for better readability */
+}
+
+/* Style for "Read more" link */
+.faq-card a {
+    display: inline-block;   /* Inline-block to make the link appear as a button */
+    margin-top: 10px;        /* Space above the link */
+    color: #007BFF;          /* Blue color for the link */
+    text-decoration: none;   /* Remove underline from the link */
+    font-weight: bold;       /* Make the link text bold */
+}
+
+.faq-card:hover {
+    transform: translateY(-5px); /* Slightly lift the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
